@@ -16,11 +16,14 @@ public class main {
 
             File file = new File(filename);
             //XMLSubhandler handler = new XMLSubhandler( new XMLPrinterHandler2() );
-            XMLAnalyzer h = new XMLAnalyzer();
+            XMLSubhandler.IXMLNodeHandler h = new XMLAnalyzer();
+//            XMLSubhandler.IXMLNodeHandler h = new XMLOSM();
             //parser.parse(file, new XMLPrinterHandler());
             parser.parse(file, new XMLSubhandler(h));
 
-            System.out.print( h.toString() );
+            if( h instanceof XMLAnalyzer) {
+                System.out.print(h.toString());
+            }
             long time_end = System.currentTimeMillis();
 
             System.out.println("parsed " + file.length()/(1024*1024) + " MB in " + (time_end-time_start)/1000.0 + " s");

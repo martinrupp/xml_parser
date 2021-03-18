@@ -29,11 +29,6 @@ public class XMLAnalyzer implements XMLSubhandler.IXMLNodeHandler
     }
 
     @Override
-    public void endElement(String uri, String localName, String qName)
-    {
-    }
-
-    @Override
     public void addString(String s)
     {
         type.analyze( s );

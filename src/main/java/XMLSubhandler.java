@@ -17,15 +17,18 @@ public class XMLSubhandler extends DefaultHandler {
          * all future calls to startElement/addString will go to that element, until endElement is called
          * startElement may return null, meaning we don't want to process anything from this element or its subelements
          */
-        public IXMLNodeHandler startElement(String namespaceURI, String localName, String qName, Attributes atts);
+        default IXMLNodeHandler startElement(String namespaceURI, String localName, String qName, Attributes atts) {
+            // ignore sub-nodes
+            return null;
+        }
         // end the current parsing of this element type
         // for parameters @see org.xml.sax.helpers.DefaultHandler#endElement
-        public void endElement(String uri, String localName, String qName);
+        default void endElement(String uri, String localName, String qName) {}
 
         // this function will be called by XmlHandlerWithSubHandlers for all
         // calls of @see org.xml.sax.helpers.DefaultHandler#characters
         // we will create a string for that, and then call addString
-        public void addString(String s);
+        default void addString(String s) {}
     }
     XMLSubhandler(IXMLNodeHandler rootHandler)
     {
