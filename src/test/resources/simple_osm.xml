@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<osm version="0.6" generator="osmium/1.8.0">
+    <bounds minlat="-90" minlon="-180" maxlat="-60" maxlon="180"/>
+    <node id="36966060" version="66" timestamp="2020-11-25T15:27:25Z" lat="-79.4063075" lon="0.3149312">
+        <tag k="wikipedia" v="en:Antarctica"/>
+    </node>
+    <node id="98257134" version="3" timestamp="2013-11-16T13:45:12Z" lat="-54.7260987" lon="-63.7957407"/>
+    <node id="248461592" version="15" timestamp="2020-04-30T07:11:17Z" lat="-62.1590141" lon="-58.4719356">
+        <tag k="official_name" v="Stacja Antarktyczna Polskiej Akademii Nauk im. Henryka Arctowskiego"/>
+    </node>
+    <node id="248461594" version="3" timestamp="2019-04-11T20:48:01Z" lat="-62.4784348" lon="-59.7140826">
+        <tag k="name" v="Discovery Bay"/>
+    </node>
+    <node id="275462210" version="1" timestamp="2008-07-02T02:04:29Z" lat="-70.3064496" lon="12.4648896"/>
+    <node id="275462254" version="1" timestamp="2008-07-02T02:04:39Z" lat="-70.3025819" lon="12.5224856"/>
+    <node id="275462346" version="1" timestamp="2008-07-02T02:05:02Z" lat="-70.8171993" lon="-7.5931999"/>
+    <node id="8518223538" version="1" timestamp="2021-03-14T16:43:55Z" lat="-69.5569534" lon="-72.8729154"/>
+    <node id="8518223539" version="1" timestamp="2021-03-14T16:43:55Z" lat="-69.5566836" lon="-72.8784943"/>
+    <node id="8518223540" version="1" timestamp="2021-03-14T16:43:55Z" lat="-69.5564437" lon="-72.8868199"/>
+    <way id="25291691" version="3" timestamp="2019-06-29T21:37:53Z">
+        <nd ref="275494491"/>
+        <nd ref="275503483"/>
+        <nd ref="275473051"/>
+        <nd ref="275463021"/>
+        <nd ref="275494491"/>
+        <tag k="name" v="Faure Island"/>
+        <tag k="note" v="who knows an exact source?"/>
+        <tag k="place" v="island"/>
+        <tag k="source" v="GADM"/>
+        <tag k="natural" v="coastline"/>
+    </way>
+    <relation id="188921" version="22" timestamp="2020-12-18T10:37:36Z">
+        <member type="way" ref="38043843" role="outer"/>
+        <member type="way" ref="62214527" role="outer"/>
+        <member type="way" ref="62214528" role="outer"/>
+        <member type="way" ref="223701152" role="outer"/>
+        <member type="way" ref="223705738" role="outer"/>
+    </relation>
+    <relation id="12418373" version="1" timestamp="2021-03-09T03:42:15Z">
+        <member type="way" ref="914893958" role=""/>
+        <tag k="boundary" v="land_area"/>
+        <tag k="type" v="boundary"/>
+    </relation>
+</osm>
